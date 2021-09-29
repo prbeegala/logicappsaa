@@ -13,19 +13,6 @@ jobs:
 - job: logic_app_build
   displayName: 'Build and publish logic app'
   steps:
-  - task: AzurePowerShell@4
-    displayName: 'Generate connections.json file'
-    inputs:
-      azureSubscription: '$(devServiceConnection)'
-      ScriptType: 'FilePath'
-      ScriptPath: '$(System.DefaultWorkingDirectory)/logicappsaa/.pipelines/scripts/Generate-Connections.ps1'
-      FailOnStandardError: true
-      azurePowerShellVersion: LatestVersion
-      pwsh: true
-      ScriptArguments: >-
-        -resourceGroup $(resourceGroupName)
-        -outputlocation $(System.DefaultWorkingDirectory)/logicappsaa/connections.json
-
   - task: CopyFiles@2
     displayName: 'Create project folder'
     inputs:

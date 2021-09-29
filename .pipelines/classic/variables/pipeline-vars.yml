@@ -6,11 +6,11 @@ variables:
   suffix: 'devw'
 
   # TODO: Fill in with the name of your Azure service connection
-  devServiceConnection: 'github.com_prbeegala'
+  devServiceConnection: 'BeegalaInternalSubscription'
 
   # Resource Group
   resourceGroupLocation: 'westeurope'
-  resourceGroupName: 'rg-wus-$(projectName)-$(suffix)'
+  resourceGroupName: 'rg-logicapp-ado'
 
   # Storage
   storageName: 'sa$(projectName)$(suffix)'

@@ -11,7 +11,7 @@ variables:
 
 resources:
   pipelines:
-  - pipeline: CILogicApp
+  - pipeline: cilogicapp
     # TODO: Update with the name of your CI pipeline
     source: 'prbeegala.logicappsaa'
     trigger:

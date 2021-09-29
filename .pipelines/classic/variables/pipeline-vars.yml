@@ -2,14 +2,14 @@
 
 variables:
 
-  projectName: 'logicappsample'
+  projectName: 'logicappsaa'
   suffix: 'devw'
 
   # TODO: Fill in with the name of your Azure service connection
-  devServiceConnection: 'Microsoft Azure Internal Consumption (ea3e783f-6b4a-4e74-b379-9fa512da2b7f)'
+  devServiceConnection: 'BeegalaInternalSubscription (52eb3891-6f09-4350-8707-4dc848cba302)'
 
   # Resource Group
-  resourceGroupLocation: 'westus'
+  resourceGroupLocation: 'westeurope'
   resourceGroupName: 'rg-wus-$(projectName)-$(suffix)'
 
   # Storage

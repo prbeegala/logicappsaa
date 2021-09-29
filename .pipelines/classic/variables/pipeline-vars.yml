@@ -13,14 +13,14 @@ variables:
   resourceGroupName: 'rg-logicapp-ado'
 
   # Storage
-  storageName: 'sa$(projectName)$(suffix)'
-  appServicePlanName: 'asp$(projectName)$(suffix)'
+  storageName: 'laemailworkflowaa '
+  appServicePlanName: 'ASP-RGExamPrep-ac3d'
 
   #  Logic App
-  logicAppName: 'la-wus-$(projectName)-$(suffix)'
+  logicAppName: 'laemailworkflowaa '
 
   # API Connections
-  officeConnectionName: 'la-wus-$(projectName)-connection-office365'
+  officeConnectionName: 'office365'
 
   # Project artifacts
   logicAppCIArtifactName: 'logicapp_publish_artifact'

@@ -6,7 +6,7 @@ variables:
   suffix: 'devw'
 
   # TODO: Fill in with the name of your Azure service connection
-  devServiceConnection: 'BeegalaInternalSubscription (52eb3891-6f09-4350-8707-4dc848cba302)'
+  devServiceConnection: 'github.com_prbeegala'
 
   # Resource Group
   resourceGroupLocation: 'westeurope'

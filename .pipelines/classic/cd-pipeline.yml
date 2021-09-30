@@ -13,7 +13,7 @@ resources:
   pipelines:
   - pipeline: cipipeline
     # TODO: Update with the name of your CI pipeline
-    source: 'prbeegala.logicappsaa'
+    source: cipipeline
     trigger:
       branches:
       - main
@@ -38,7 +38,7 @@ stages:
           - task: AzureFunctionApp@1
             displayName: 'Deploy logic app workflows'
             inputs:
-              azureSubscription: '$(devServiceConnection)'
+              azureSubscription: 'BeegalaInternalSubscription'
               appType: 'functionapp,workflowapp'
               appName: '$(logicAppName)'
               package: '$(Pipeline.Workspace)/cipipeline/$(logicAppCIArtifactName)/$(resources.pipeline.cipipeline.runID).zip'

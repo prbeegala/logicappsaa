@@ -38,7 +38,6 @@ stages:
           - task: AzureFunctionAppContainer@1
             displayName: 'Update logic app container'
             inputs:
-              azureSubscription: $(devServiceConnection)
+              azureSubscription: 'BeegalaInternalSubscription'
               appName: '$(logicAppName)'
               imageName: '$(acrName).azurecr.io/$(logicAppContainerName):$(resources.pipeline.cipipeline.RunId)'
-              appsettings: '-emailAddress $(toEmailAddress)'

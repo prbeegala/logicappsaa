@@ -17,7 +17,7 @@ variables:
   appServicePlanName: 'ASP-RGExamPrep-ac3d'
 
   #  Logic App
-  logicAppName: 'laemailworkflowaa '
+  logicAppName: 'laemailworkflowaa'
 
   # API Connections
   officeConnectionName: 'office365'

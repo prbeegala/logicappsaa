@@ -16,14 +16,13 @@ jobs:
   - task: AzurePowerShell@4
     displayName: 'Generate connections.json file'
     inputs:
-      azureSubscription: $(devServiceConnection)
+      azureSubscription: 'BeegalaInternalSubscription'
       ScriptType: 'FilePath'
       ScriptPath: '$(System.DefaultWorkingDirectory)/.pipelines/scripts/Generate-Connections.ps1'
+      ScriptArguments: '-resourceGroup $(resourceGroupName)'
       FailOnStandardError: true
-      azurePowerShellVersion: LatestVersion
+      azurePowerShellVersion: 'LatestVersion'
       pwsh: true
-      ScriptArguments: >-
-        -resourceGroup $(resourceGroupName)
 
   - task: AzureCLI@2
     displayName: 'Build & Push Logic App Image'

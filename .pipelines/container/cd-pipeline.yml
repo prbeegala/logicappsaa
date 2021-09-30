@@ -11,9 +11,9 @@ variables:
 
 resources:
   pipelines:
-  - pipeline: cipipeline
+  - pipeline: cipipelinecontainer
     # TODO: Update with the name of your CI pipeline
-    source: ''
+    source: cipipelinecontainer
     trigger:
       branches:
       - main

@@ -2,30 +2,30 @@
 
 variables:
 
-  projectName: 'logicappsample'
+  projectName: 'logicappsaa'
   suffix: 'devc'
 
   # TODO: Fill in with the name of your Azure service connection
-  devServiceConnection: ''
+  devServiceConnection: 'BeegalaInternalSubscription'
 
   # Resource Group
-  resourceGroupLocation: 'westus'
-  resourceGroupName: 'rg-wus-$(projectName)-$(suffix)'
+  resourceGroupLocation: 'westeurope'
+  resourceGroupName: 'rg-logicapp-ado'
 
   # ACR
-  acrName: 'acrwus$(projectName)$(suffix)'
-  acrSkuName: 'Basic'
+  acrName: 'workflowcontainer'
+  acrSkuName: 'Standard'
 
   # Storage
-  storageName: 'sa$(projectName)$(suffix)'
-  appServicePlanName: 'asp$(projectName)$(suffix)'
+  storageName: 'laemailworkflowaa '
+  appServicePlanName: 'ASP-RGExamPrep-ac3d'
 
   #  Logic App
-  logicAppName: 'la-wus-$(projectName)-$(suffix)'
+  logicAppName: 'laemailworkflowaa'
   logicAppContainerName: '$(projectName)'
 
   # API Connections
-  officeConnectionName: 'la-wus-$(projectName)-connection-office365'
+  officeConnectionName: 'office365'
 
   # Project artifacts
   logicAppCIArtifactName: 'logicapp_publish_artifact'

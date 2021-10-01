@@ -11,9 +11,9 @@ variables:
 
 resources:
   pipelines:
-  - pipeline: cipipeline
+  - pipeline: logicappsaacd
     # TODO: Update with the name of your CI pipeline
-    source: cipipeline
+    source: prbeegala.logicappsaa
     trigger:
       branches:
       - main

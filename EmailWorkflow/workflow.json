@@ -14,7 +14,7 @@
                     "body": {
                         "To": "@parameters('emailAddressTo')",
                         "Subject": "CI CD Email",
-                        "Body": "<p>This is the best team</p>"
+                        "Body": "<p>This is the best team forever</p>"
                     },
                     "path": "/v2/Mail"
                 },
